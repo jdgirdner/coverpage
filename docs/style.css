@@ -13,9 +13,11 @@ html{
 }
 header{
     position: relative;
-    height: 50vh;
+    height: 100vh;
     background-image: url(images/hero2.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    
     margin: 0;
     padding: 0;
     left: 0;
@@ -85,6 +87,15 @@ a.selector:hover{
     flex-grow: 1;
     color: var(--white-txt-color);
     font-size: 2em;
+}
+#downarrow{
+    position: absolute;
+    height: 10%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 body{
     position: relative;
