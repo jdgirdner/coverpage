@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src= "functions.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src= "functions.js"></script>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>skyprecision</title>
@@ -15,22 +16,39 @@
             <!--<hr class="horizontal-divider">-->
             <div id="select-items">
                 <a id="mission" class="selector" href="#ourmission">our mission</a>
-                <a id="gallery" class="selector" href="#gallery">gallery</a>
+                <a id="gallery" class="selector" href="#gallerybody">gallery</a>
+                <a id="milestones" class="selector" href="#milestones">our journey</a>
                 <a id="contact" class="selector" href="#contact-footer">contact</a>
                 <a id="login" class="selector" href="https://ami2.netlify.com/">login</a>
             </div>
         </div>
         <a href="#ourmission"><img src="images/downarrow.png" id="downarrow" ></a>
     </header>
-    <body>
+    <body onload="plusSlides(1)">
         <div id="ourmission" class="section">
             <h1>our mission</h1>
-            <p>Lorem ipsum dolor sit amet, mel lorem laudem at, cu lorem liber prodesset has. Mei pericula rationibus expetendis an, sit stet nulla nominavi ex, vis ei vidit officiis insolens. Eam at ullum altera dissentiet, id has veniam platonem, qui at error recteque. At sit lucilius forensibus, solet qualisque dignissim te sed, liber patrioque evertitur ius ad. Diam impedit iudicabit sea ea, in sea movet pericula, vis te facilisi consetetur.</p>
+            <p>
+                SkyPrecision is a project designed around the precision viticulture needs of Blenheim Vineyard. Our mission is to streamline the crop monitoring process for our users so that they can amplify crop output while also reducing time spent in the field. To accomplish that goal, the project uses drone-based multispectral imagery to inform an interactive web-based platform on vine health.
+            </p>
+            <p>
+                SkyPrecision provides two primary competencies to the user. First, it gives them an advanced view of crop health, allowing them to see where and how their crops may be at risk. Pulling multispectral images from drone coverage, it allows the user to identify areas of concern based on water content, thermal imagery, and established vegetation indices. Second, it gives the user the capability to interact with the crops, providing the functionality to manually diagnose and geo-tag specific vines directly from the field.
+            </p>
+            <p>
+               Currently, the application is under development, but the team will be completing regular milestones over the course of the next 6 months in order to fully meet the needs of our user.
+            </p>
         </div>
-        <div id="gallery" class="section">
+        <div id="gallerybody" class="section">
             <h1>gallery</h1>
-            <p>Lorem ipsum dolor sit amet, mel lorem laudem at, cu lorem liber prodesset has. Mei pericula rationibus expetendis an, sit stet nulla nominavi ex, vis ei vidit officiis insolens. Eam at ullum altera dissentiet, id has veniam platonem, qui at error recteque. At sit lucilius forensibus, solet qualisque dignissim te sed, liber patrioque evertitur ius ad. Diam impedit iudicabit sea ea, in sea movet pericula, vis te facilisi consetetur.</p>
+            <div class="slideshow" id="gallery-slideshow">
+                <div id="image-caption"></div>
+                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </div>
+        <div id="milestonesbody" class="section">
+                <h1>our journey</h1>
+                <p>Lorem ipsum dolor sit amet, mel lorem laudem at, cu lorem liber prodesset has. Mei pericula rationibus expetendis an, sit stet nulla nominavi ex, vis ei vidit officiis insolens. Eam at ullum altera dissentiet, id has veniam platonem, qui at error recteque. At sit lucilius forensibus, solet qualisque dignissim te sed, liber patrioque evertitur ius ad. Diam impedit iudicabit sea ea, in sea movet pericula, vis te facilisi consetetur.</p>
+            </div>
         <div id="aboutbody" class="section">
             <h1>about us</h1>
             <p>Lorem ipsum dolor sit amet, mel lorem laudem at, cu lorem liber prodesset has. Mei pericula rationibus expetendis an, sit stet nulla nominavi ex, vis ei vidit officiis insolens. Eam at ullum altera dissentiet, id has veniam platonem, qui at error recteque. At sit lucilius forensibus, solet qualisque dignissim te sed, liber patrioque evertitur ius ad. Diam impedit iudicabit sea ea, in sea movet pericula, vis te facilisi consetetur.</p>

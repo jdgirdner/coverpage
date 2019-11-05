@@ -1,6 +1,6 @@
 :root{
     --main-txt-color: #323031;
-    --main-bg-color: #C1BDB3;
+    --main-bg-color: #ffffff;
     --darker-bg-color: #7F7979;
     --lighter-txt-color: #3D3B3C;
     --middle-gray: #5F5B6B;
@@ -149,11 +149,56 @@ footer{
     filter: invert(20%);
     -webkit-filter: invert(20%);
 }
+
+#gallery-slideshow{
+    position: relative;
+    height: 90vh;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-bg-color);
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    transition: ease-in-out 0.5s;
+}
+#image-caption{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-txt-color);
+    background-color:var(--darker-bg-color);
+    opacity: .75;
+}
+#prev{
+    position: absolute;
+    bottom: 40%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: var(--main-txt-color);
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    bottom: 40%;
+    right: 0%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    color: var(--main-txt-color);
+    cursor: pointer;
+}
 @media only screen and (max-device-width: 468px){
     #header-label{
         font-size: 6vw;
     }
     #select-items{
         font-size: 2.5vw; 
+    }
+    #gallery-slideshow{
+        height: 35vh;
     }
 }
