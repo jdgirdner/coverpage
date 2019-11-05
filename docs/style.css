@@ -4,7 +4,7 @@
     --darker-bg-color: #7F7979;
     --lighter-txt-color: #3D3B3C;
     --middle-gray: #5F5B6B;
-    --white-txt-color: #ffffff;
+    --white-txt-color: #f9f9f9;
 }
 
 html{
@@ -97,8 +97,8 @@ a.selector:hover{
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: invert(1);
-    -webkit-filter: invert(1);
+    filter: invert(.99);
+    -webkit-filter: invert(.99);
 }
 body{
     position: relative;
