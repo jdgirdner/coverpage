@@ -169,6 +169,7 @@ footer{
 }
 #image-caption{
     position: relative;
+    bottom: 0;
     width: auto;
     text-align: center;
     background: var(--main-txt-color);
