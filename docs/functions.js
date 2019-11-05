@@ -15,10 +15,6 @@ const slides =
     }
 ]
 var slidesIndex = -1;
-
-function disappearHeader(){
-    $("header").fadeOut(1000);
-}
 function plusSlides(increment){
     slidesIndex +=increment;
     if(slidesIndex < 0){
