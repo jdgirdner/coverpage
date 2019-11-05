@@ -1,0 +1,214 @@
+:root{
+    --main-txt-color: #323031;
+    --main-bg-color: #f9f9f9;
+    --darker-bg-color: #7F7979;
+    --lighter-txt-color: #3D3B3C;
+    --middle-gray: #5F5B6B;
+    --white-txt-color: #f9f9f9;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    position: relative;
+    height: 100vh;
+    background-image: url(images/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+#header-div{
+    position: absolute;
+    text-align: center;
+    color: var(--white-txt-color);
+    top: 10%;
+    left: 20%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+#header-label{
+    overflow: hidden;
+    border-right: .15em solid var(--white-txt-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 1.5s steps(20, end),
+        blink-caret .75s step-end infinite;
+    -webkit-animation: 
+        typing 1.5s steps(20, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:var(--white-txt-color); }
+}
+#selectors{
+    text-align: center;
+	position: absolute;
+    width: 50%;
+    top: 5%;
+	padding-left: 90vh;
+}
+.horizontal-divider{
+    width: 100%;
+}
+#select-items{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+a.selector:link{
+    text-decoration: none;
+}
+a.selector:visited{
+    text-decoration: none;
+}
+a.selector:hover{
+    text-decoration: underline;
+}
+.selector{
+    display: inline;
+    text-align: center;
+    margin-top: 2vh;
+    flex-shrink: 1;
+    flex-grow: 1;
+    color: var(--white-txt-color);
+    font-size: 2em;
+}
+#downarrow{
+    position: absolute;
+    height: 10%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(.99);
+    -webkit-filter: invert(.99);
+    opacity: .35;
+}
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left:0;
+    right:0;
+    display: block;
+    color: var(--lighter-txt-color);
+    background-color: var(--main-bg-color);
+}
+.section{
+    margin: auto;
+    width: 65%;
+	text-align: center;
+}
+footer{
+    position: relative;
+    height: 20vh;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+}
+#bottom-divider{
+    color: var(--darker-bg-color);
+    width: 95%;
+}
+#footer-title{
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 0;
+    color: var(--lighter-txt-color);
+    text-align: center;
+    display: block;
+}
+#contact-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.social-icon{
+    height: 5vh;
+}
+.social-link{
+    display: block;
+}
+.social-icon:hover{
+    filter: invert(20%);
+    -webkit-filter: invert(20%);
+}
+
+#gallery-slideshow{
+    position: relative;
+    height: 90vh;
+    max-width: 100vw;
+    padding: 2vh 0 0 0;
+    margin: 0;
+    background-color: var(--main-txt-color);
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    transition: ease-in-out 0.5s;
+}
+#image-caption{
+    position: relative;
+    bottom: 0;
+    width: auto;
+    text-align: center;
+    background: var(--main-txt-color);
+    color: var(--white-txt-color);
+}
+#prev{
+    position: absolute;
+    bottom: 40%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    bottom: 40%;
+    right: 0%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+@media only screen and (max-device-width: 468px){
+    #header-label{
+        font-size: 6vw;
+    }
+    #select-items{
+        font-size: 2.5vw; 
+    }
+    #gallery-slideshow{
+        height: 35vh;
+    }
+}
+.opener {
+	text-align: center;
+	padding: 1.5px;
+	font-size: 2em;
+	width: 100%;
+}
