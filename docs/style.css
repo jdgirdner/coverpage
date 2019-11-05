@@ -1,6 +1,6 @@
 :root{
     --main-txt-color: #323031;
-    --main-bg-color: #ffffff;
+    --main-bg-color: #f9f9f9;
     --darker-bg-color: #7F7979;
     --lighter-txt-color: #3D3B3C;
     --middle-gray: #5F5B6B;
@@ -173,7 +173,7 @@ footer{
     width: auto;
     text-align: center;
     background: var(--main-txt-color);
-    color: var(--main-bg-color);
+    color: var(--white-txt-color);
 }
 #prev{
     position: absolute;
