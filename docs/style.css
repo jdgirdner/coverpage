@@ -70,6 +70,7 @@ header{
     display: flex;
     flex-direction: row;
     text-align: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 a.selector:link{
@@ -84,6 +85,8 @@ a.selector:hover{
 .selector{
     display: inline;
     text-align: center;
+    margin-top: 2vh;
+    flex-shrink: 1;
     flex-grow: 1;
     color: var(--white-txt-color);
     font-size: 2em;
@@ -156,7 +159,7 @@ footer{
     max-width: 100vw;
     padding: 0;
     margin: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-txt-color);
     background-image: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -165,13 +168,11 @@ footer{
     transition: ease-in-out 0.5s;
 }
 #image-caption{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white-txt-color);
-    background-color:var(--darker-bg-color);
-    opacity: .75;
+    position: relative;
+    width: auto;
+    text-align: center;
+    background: var(--main-txt-color);
+    color: var(--main-bg-color);
 }
 #prev{
     position: absolute;
@@ -179,7 +180,7 @@ footer{
     left: 2%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-    color: var(--main-txt-color);
+    color: var(--main-bg-color);
     cursor: pointer;
 }
 #next{
@@ -188,7 +189,7 @@ footer{
     right: 0%;
     font-size: 2em;
     transform: translate(-50%, -50%);
-    color: var(--main-txt-color);
+    color: var(--main-bg-color);
     cursor: pointer;
 }
 @media only screen and (max-device-width: 468px){
